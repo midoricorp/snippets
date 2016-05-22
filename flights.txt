@@ -1,0 +1,17 @@
+/**
+ ** This command retrieves the latest cheap flights from the Secret Flying blog
+ ** Eg: !flights
+ ** Tags: [API, HTML]
+ **/
+
+
+!script sub flights {
+    var f = get ("http://rss2json.com/api.json?rss_url=http%3A%2F%2Fwww.secretflying.com%2Ffeed%2F")->"items";
+    var flength = sizeof(f);
+    var i = 0;
+    while (i < flength){
+        print HTML "<a href='".f[i]->"link"."'>".f[i]->"title"."</a><p>-- ".f[i]->"pubDate"."</p>";
+        print HTML "<br/>";
+        i++;
+    }
+}
