@@ -10,8 +10,10 @@
     var flength = sizeof(f);
     var i = 0;
     while (i < flength){
-        print HTML "<a href='".f[i]->"link"."'>".f[i]->"title"."</a><p>-- ".f[i]->"pubDate"."</p>";
+        print HTML "<a href='".f[i]->"link"."'>".f[i]->"title"."</a>-- ".f[i]->"pubDate";
         print HTML "<br/>";
+        print f[i]->"title". " -- ".f[i]->"pubDate";
+        print f[i]->"link";
         i++;
     }
 }
