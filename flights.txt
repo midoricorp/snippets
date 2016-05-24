@@ -1,19 +1,36 @@
-/**
- ** This command retrieves the latest cheap flights from the Secret Flying blog
- ** Eg: !flights
- ** Tags: [API, HTML]
- **/
+!script sub flights
+{
+   var f = get ("http://rss2json.com/api.json?rss_url=http%3A%2F%2Fwww.secretflying.com%2Ffeed%2F")->"items";
+   var i = 0;
+   var flength = sizeof (f);
+   if (sizeof _==0){
+           print HTML "<span style='color: #FF1C1C '>You can filter the results by categories by adding parameters, eg: !flights Central America</span><br />";
+           print HTML "<span style='color: #FF1C1C '>Example categories include: 1 Stop, Non-Stop, Asia, Europe, Depart USA, Central America, North America, South America</span><br />";
 
-
-!script sub flights {
-    var f = get ("http://rss2json.com/api.json?rss_url=http%3A%2F%2Fwww.secretflying.com%2Ffeed%2F")->"items";
-    var flength = sizeof(f);
-    var i = 0;
-    while (i < flength){
-        print HTML "<a href='".f[i]->"link"."'>".f[i]->"title"."</a>-- ".f[i]->"pubDate";
-        print HTML "<br/>";
-        print f[i]->"title". " -- ".f[i]->"pubDate";
-        print f[i]->"link";
-        i++;
-    }
+           while (i<flength)
+           {
+               print HTML "<a href='".f[i]->"link"."'>".f[i]->"title"."</a>-- ".f[i]->"pubDate";
+               print HTML "<br/>";
+               print f[i]->"title"." -- ".f[i]->"pubDate";
+               print f[i]->"link";
+               i++;
+           }
+   } else {
+       var query = join (" ",_);
+       while(sizeof(f) >0) {
+           var item = shift(f);
+           var categories = item->"categories";
+           while(sizeof(categories) > 0) {
+               var category = shift(categories);
+               if(category =~ ("/" . query . "/i")) {
+                 print item->"title";
+                 print HTML "<a href='".item->"link"."'>".item->"title"."</a>-- ".item->"pubDate";
+                 print HTML "<br/>";
+                 print item->"title"." -- ".item->"pubDate";
+                 print item->"link";
+                 break;
+               }
+           }
+       }
+   }
 }
