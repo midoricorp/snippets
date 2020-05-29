@@ -19,3 +19,5 @@ Full List
 *   [pirate](https://github.com/midoricorp/snippets/blob/master/pirate.ss): Talk like a Pirate
 *   [yomama](https://github.com/midoricorp/snippets/blob/master/yomama.ss): Yo-Mama joke generator
 *   [lebowski](https://github.com/midoricorp/snippets/blob/master/lebowski.ss): Displays a random lebowski quote
+*   [trump_insult](https://github.com/midoricorp/snippets/blob/master/trump_insult.ss): Generates a random Trump quote or Insults a person Trump-style
+*   [xkcd](https://github.com/midoricorp/snippets/blob/master/xkcd.ss): Displays an XKCD commic
