@@ -11,3 +11,5 @@ Full List
 *   [ponyface](https://github.com/midoricorp/snippets/blob/master/ponyface.ss): This command produces a pony picture at random or based on a keyword.
 *   [orly](https://github.com/midoricorp/snippets/blob/master/orly.ss): Make a fake O'Riley book cover
 *   [meme](https://github.com/midoricorp/snippets/blob/master/meme.ss): Generate a meme via imgflip
+*   [pirate](https://github.com/midoricorp/snippets/blob/master/pirate.ss): Talk like a Pirate
+*   [yomama](https://github.com/midoricorp/snippets/blob/master/yomama.ss): Yo-Mama joke generator
