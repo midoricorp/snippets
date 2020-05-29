@@ -9,3 +9,4 @@ Full List
 *   [wikipedia](https://github.com/midoricorp/snippets/blob/master/wikipedia.ss): This command retrieves the Wikipedia summary of the passed word.
 *   [flights](https://github.com/midoricorp/snippets/blob/master/flights.ss): This command retrieves the latest cheap flights from the Secret Flying blog.
 *   [ponyface](https://github.com/midoricorp/snippets/blob/master/ponyface.ss): This command produces a pony picture at random or based on a keyword.
+*   [orly](https://github.com/midoricorp/snippets/blob/master/orly.ss): Make a fake O'Riley book cover
