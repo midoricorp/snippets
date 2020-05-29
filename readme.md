@@ -3,6 +3,9 @@ Snippet Archive
 
 This repo contains awesome code snippets you can copy-paste and modify to interact with Midori and get started on building your first commands.
 
+Have you made a cool commad? Please send a pull request and share your script
+with the world! :D
+
 *Note:* These scripts contain comments.  If you are running a version of script prior to 0.7.7 please remove the comments before pasting
 
 Full List
@@ -15,3 +18,4 @@ Full List
 *   [meme](https://github.com/midoricorp/snippets/blob/master/meme.ss): Generate a meme via imgflip
 *   [pirate](https://github.com/midoricorp/snippets/blob/master/pirate.ss): Talk like a Pirate
 *   [yomama](https://github.com/midoricorp/snippets/blob/master/yomama.ss): Yo-Mama joke generator
+*   [lebowski](https://github.com/midoricorp/snippets/blob/master/lebowski.ss): Displays a random lebowski quote
