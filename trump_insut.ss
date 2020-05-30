@@ -17,3 +17,5 @@ sub trump_insult
         print get ("https://api.whatdoestrumpthink.com/api/v1/quotes/personalized?q=".person)->"message";
     }
 }
+
+# vim: set filetype=perl :

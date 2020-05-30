@@ -70,3 +70,5 @@ sub meme
 		print "meme: type text1 text2 [text3]+";
 	}
 }
+
+# vim: set filetype=perl :

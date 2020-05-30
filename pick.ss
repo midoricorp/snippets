@@ -7,3 +7,5 @@ sub pick
 {
     print _[ rand %(sizeof _)];
 }
+
+# vim: set filetype=perl :

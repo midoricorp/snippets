@@ -46,3 +46,5 @@ sub orly
 
 	}
 }
+
+# vim: set filetype=perl :

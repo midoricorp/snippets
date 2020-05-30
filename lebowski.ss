@@ -19,3 +19,5 @@ sub lebowski
         print HTML "<b>".html_encode (line->"character"->"name").":</b> ".html_encode (line->"text");
     }
 }
+
+# vim: set filetype=perl :

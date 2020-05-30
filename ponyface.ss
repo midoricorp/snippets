@@ -35,3 +35,5 @@ sub ponyface
 		print HTML "</a>";
 	}
 }
+
+# vim: set filetype=perl :

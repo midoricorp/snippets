@@ -7,3 +7,5 @@ sub pirate
 	var url = "http://pirate.monkeyness.com/cgi-bin/translator.pl?english=".url_encode (msg); #always url encode strings when building a url!
 	print get (url);
 }
+
+# vim: set filetype=perl :

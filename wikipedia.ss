@@ -8,3 +8,5 @@ sub wikipedia
     var def = get ("https://en.wikipedia.org/api/rest_v1/page/summary/".url_encode (query));
     print def->"extract";
 }
+
+# vim: set filetype=perl :
