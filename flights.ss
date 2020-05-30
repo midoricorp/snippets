@@ -43,3 +43,4 @@ sub flights
       }
    }
 }
+# vim: set filetype=perl :

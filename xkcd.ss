@@ -38,3 +38,4 @@ sub xkcd
         print HTML "<img src='".comic->"img"."'/>";
     }
 }
+# vim: set filetype=perl :
