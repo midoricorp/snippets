@@ -5,7 +5,7 @@ sub ponyface
 {
 	if ( sizeof _>0)
 	{
-		var faces = get ("http://ponyfaces.hpcodecraft.me/api.json/tag:".url_encode (_[0]))->"faces";
+		var faces = get ("https://ponyfaces.hpcodecraft.me/api.json/tag:".url_encode (_[0]))->"faces";
 		if ( sizeof faces>0)
 		{
 			var index =  rand %( sizeof faces);
@@ -27,11 +27,11 @@ sub ponyface
 		var choice = (rand %162)+1;
 		
 		#print the plaintext version
-		print "http://ponyfaces.hpcodecraft.me/".choice."/thumb.jpeg";
+		print "https://ponyfaces.hpcodecraft.me/".choice."/thumb.jpeg";
 
 		#print the xhtml version
-		print HTML "<a href='http://ponyfaces.hpcodecraft.me/".choice."/full.jpeg"."'>";
-		print HTML "<img src='http://ponyfaces.hpcodecraft.me/".choice."/thumb.jpeg"."'/>";
+		print HTML "<a href='https://ponyfaces.hpcodecraft.me/".choice."/full.jpeg"."'>";
+		print HTML "<img src='https://ponyfaces.hpcodecraft.me/".choice."/thumb.jpeg"."'/>";
 		print HTML "</a>";
 	}
 }
