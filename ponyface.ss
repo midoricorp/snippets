@@ -13,8 +13,8 @@ sub ponyface
 			print faces[index]->"thumbnail".".jpeg";
 			
 			#print the XHTML version
-			print HTML "<a href='".faces[index]->"image".".jpeg"."'>";
-			print HTML "<img src='".faces[index]->"thumbnail".".jpeg"."'/>";
+			print HTML "<a href='https://ponyfaces.hpcodecraft.me/".faces[index]->"image".".jpeg"."'>";
+			print HTML "<img src='https://ponyfaces.hpcodecraft.me/".faces[index]->"thumbnail".".jpeg"."'/>";
 			print HTML "</a>";
 		}
 		 else 
