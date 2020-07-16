@@ -10,11 +10,11 @@ sub ponyface
 		{
 			var index =  rand %( sizeof faces);
 			#print the plain text version
-			print faces[index]->"thumbnail".".jpeg";
+			print "https:".faces[index]->"thumbnail".".jpeg";
 			
 			#print the XHTML version
-			print HTML "<a href='https".faces[index]->"image".".jpeg"."'>";
-			print HTML "<img src='https".faces[index]->"thumbnail".".jpeg"."'/>";
+			print HTML "<a href='https:".faces[index]->"image".".jpeg"."'>";
+			print HTML "<img src='https:".faces[index]->"thumbnail".".jpeg"."'/>";
 			print HTML "</a>";
 		}
 		 else 
